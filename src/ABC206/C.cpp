@@ -1,26 +1,45 @@
+#include <map>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main() {
     int N;
     cin >> N;
 
-    vector<int> A(N);
+    vector<pair<int, int>> A(N);
 
     for(int i = 0; i < N; ++i) {
-        cin >> A.at(i);
+        int num;
+        cin >> num;
+        A.at(i) = make_pair(num, i);
     }
 
-    int num = 0;
+    sort(A.begin(), A.end());
 
-    for(int i = 0; i < N; ++i) {
-        for(int j = i+1; j < N; ++j) {
-            if(A.at(i) != A.at(j)) { ++num; }
+    map<int, vector<int>> B;
+
+    for(const pair<int, int> &a: A) {
+        int num = a.first;
+        int index = a.second;
+
+        if(!B.count(num)) { B[num] = { index }; }
+        else { B.at(num).push_back(index); }
+    }
+
+    long count = 0;
+
+    for(const auto &b: B) {
+        int len = b.second.size();
+
+        for(int i = 0; i < len; ++i) {
+            int index = b.second.at(i);
+            count += (N-index) - (len-i);
         }
     }
 
-    cout << num << endl;
+    cout << count << endl;
 
     return 0;
 }
