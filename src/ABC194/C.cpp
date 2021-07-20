@@ -6,7 +6,7 @@ int main() {
     int N;
     cin >> N;
 
-    vector<int> A(N);
+    vector<long long> A(N);
 
     for(int i = 0; i < N; ++i) {
         cin >> A.at(i);
