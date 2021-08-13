@@ -54,3 +54,4 @@
 - [ABC152](https://atcoder.jp/contests/abc152)
 - [ABC151](https://atcoder.jp/contests/abc151)
 - [ABC150](https://atcoder.jp/contests/abc150)
+- [ABC149](https://atcoder.jp/contests/abc149)
