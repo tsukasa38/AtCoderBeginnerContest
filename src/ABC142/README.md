@@ -1,4 +1,4 @@
-# ABC142
+# [ABC142](https://atcoder.jp/contests/abc142)
 
 ## AC
 
