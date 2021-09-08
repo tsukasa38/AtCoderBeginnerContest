@@ -79,3 +79,4 @@
 - [ABC127](https://github.com/tsukasa38/AtCoderBeginnerContest/tree/main/src/ABC127)
 - [ABC126](https://github.com/tsukasa38/AtCoderBeginnerContest/tree/main/src/ABC126)
 - [ABC125](https://github.com/tsukasa38/AtCoderBeginnerContest/tree/main/src/ABC125)
+- [ABC124](https://github.com/tsukasa38/AtCoderBeginnerContest/tree/main/src/ABC124)
